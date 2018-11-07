@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                files = findFiles(glob: '*.*')
+                bat 'dir'
             }
         }
         stage('Test') {
