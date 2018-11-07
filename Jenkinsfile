@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                   echo  env.BRANCH_NAME
+                   powershell returnStatus: true, script: '.\\build.ps1'
                     }
                 }
             }
