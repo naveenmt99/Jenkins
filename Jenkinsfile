@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                   bat 'echo "NAVEEN KUMAR"'
+                   bat 'echo %PATH%'
                     }
                 }
             }
