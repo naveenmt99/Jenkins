@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                bat 'mkdir "C:\\temp\\jenkins"'
+                echo %PATH%
             }
         }
         stage('Test') {
