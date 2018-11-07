@@ -5,9 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                   powershell returnStatus: true, script: '...
-                    echo "NAVEEN KUMAR"
-                    ...'
+                   bat 'echo "NAVEEN KUMAR"'
                     }
                 }
             }
