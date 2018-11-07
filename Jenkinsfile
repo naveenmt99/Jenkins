@@ -5,7 +5,9 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                   powershell returnStatus: true, script: '.\\build.ps1'
+                   powershell returnStatus: true, script: '...
+                    echo "NAVEEN KUMAR"
+                    ...'
                     }
                 }
             }
