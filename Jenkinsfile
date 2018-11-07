@@ -7,7 +7,7 @@ pipeline {
         //deleteDir() // Clean up the workspace
        // checkout scm
         withCredentials([file(credentialsId: 'secret', variable: 'secret')]) {
-            bat "echo  $secret"
+            bat 'echo  %secret%'
         }
           }
     }  
