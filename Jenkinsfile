@@ -4,9 +4,10 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                script {
-                   powershell returnStatus: true, script: '.\\build.ps1'
-                    }
+                def stdout = powershell(returnStdout: true, script: '''
+                echo 'NAVEEN KUMAR'
+    ''')
+    println stdout
                 }
             }
         }
